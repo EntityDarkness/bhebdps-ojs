@@ -98,3 +98,11 @@
 
 1. [Window.localStorage](https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage)
 2. [LocalStorage на пальцах](https://tproger.ru/articles/localstorage/)
+
+### Файлы в этой папке
+
+| Файл | Назначение |
+|------|------------|
+| `task.html` | Заголовок страницы, контейнер `#items` для списка валют, изображение `#loader` с классом `loader_active` |
+| `task.css` | Стили строки курса (`.item`, `.item__code`, `.item__value`) и показ/скрытие лоадера |
+| `task.js` | `fetch` к API `slow-get-courses`, разбор JSON, заполнение `#items`, снятие `loader_active` после ответа; опционально кэш в `localStorage` |
